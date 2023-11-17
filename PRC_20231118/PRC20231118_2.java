@@ -2,20 +2,34 @@ package PRC_20231118;
 
 public class PRC20231118_2 {
     public static void main(String[] args) {
-        int num = (int)(Math.random()*6)+1;
+        int num = (int) (Math.random() * 6) + 1;
 
-        if(num==1){
+        if (num == 1) {
             System.out.println("주사위 1");
-        }else if(num==2){
+        } else if (num == 2) {
             System.out.println("주사위 2");
-        }else if(num==3){
+        } else if (num == 3) {
             System.out.println("주사위 3");
-        }else if(num==4){
+        } else if (num == 4) {
             System.out.println("주사위 4");
-        }else if(num==5){
+        } else if (num == 5) {
             System.out.println("주사위 5");
-        }else{
+        } else {
             System.out.println("주사위 6");
+        }
+
+        int lotto[] = new int[6];
+        System.out.print("로또번호: ");
+        for (int i = 0; i < lotto.length; i++) {
+            int lottoNum = (int) (Math.random() * 45) + 1;
+            lotto[i] = lottoNum;
+            for (int j = 0; j < i; j++) {
+                if (lotto[i] == lotto[j]) {
+                    i--;
+                    break;
+                }
+            }
+            System.out.print(lotto[i] + " ");
         }
     }
 }
