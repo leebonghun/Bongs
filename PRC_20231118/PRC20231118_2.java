@@ -38,13 +38,13 @@ public class PRC20231118_2 {
                 break;
         }
 
-        int lotto[] = new int[6];
+        int lotto[] = new int[6]; //6개의 집을 생성
         System.out.print("로또번호: ");
         for (int i = 0; i < lotto.length; i++) {
-            int lottoNum = (int) (Math.random() * 45) + 1;
-            lotto[i] = lottoNum;
+            int lottoNum = (int) (Math.random() * 45) + 1; //로또번호 6자리 생성
+            lotto[i] = lottoNum; //6개의 집에 6개 숫자 각각 랜덤으로 집어넣기
             for (int j = 0; j < i; j++) {
-                if (lotto[i] == lotto[j]) {
+                if (lotto[i] == lotto[j]) { //6 5 4 3  순으로 오다가 0이되면 break;
                     i--;
                     break;
                 }
