@@ -56,10 +56,16 @@ public class PRC20231118_2 {
         System.out.println();
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("이름을 작성해주세요: ");
-        String name = sc.next();
+        System.out.print("삼각형 모양을 작성해주세요:  ");
+        String shape = sc.next();
 
-        System.out.println("이름은 : "+name+"입니다");
+        for(int i=1; i<6; i++){
+            for(int j=0; j<i; j++){
+                System.out.print(shape);
+            }
+            System.out.println("");
+        }
+
 
 
 
