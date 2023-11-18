@@ -1,5 +1,7 @@
 package PRC_20231118;
 
+import java.util.Scanner;
+
 public class PRC20231118_2 {
     public static void main(String[] args) {
         int num = (int) (Math.random() * 6) + 1;
@@ -51,6 +53,16 @@ public class PRC20231118_2 {
             }
             System.out.print(lotto[i] + " ");
         }
+        System.out.println();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("이름을 작성해주세요: ");
+        String name = sc.next();
+
+        System.out.println("이름은 : "+name+"입니다");
+
+
+
 
 
     }
