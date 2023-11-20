@@ -13,6 +13,10 @@ public class PRC20231119_4 {
                 System.out.print(input);
             }
             System.out.println();
+
+
+
+
         }
 
     }
